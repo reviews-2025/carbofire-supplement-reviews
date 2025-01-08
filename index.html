@@ -183,12 +183,29 @@
 
     </div>    
 
-    <div class="popup" id="cookiePopup">
-        <p>We use cookies to improve your experience. By clicking consent, you agree to our <a href="https://secretrevealhub.online/carbofire-supplement-reviews">cookie policy</a>.</p>
-        <div class="popup-buttons">
-            <button onclick="window.location.href='https://secretrevealhub.online/carbofire-supplement-reviews';">Consent</button>
-            <button class="reject" onclick="window.location.href='https://secretrevealhub.online/carbofire-supplement-reviews';">Reject</button>
-            <button class="close" onclick="window.location.href='https://secretrevealhub.online/carbofire-supplement-reviews';">Close</button>
-        </div>
+    <div id="cookie-popup" style="display:none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #fff; border: 1px solid #ccc; border-radius: 10px; padding: 20px; text-align: center; z-index: 1000; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); width: 90%; max-width: 400px; font-family: Arial, sans-serif;">
+    <p style="margin: 0; font-size: 16px; color: #333;">We use cookies to enhance your experience. By continuing, you agree to our use of cookies.</p>
+    <div style="margin-top: 15px;">
+        <button onclick="location.href='https://secretrevealhub.online/carbofire-supplement-reviews'" style="background: #28a745; color: #fff; border: none; border-radius: 5px; padding: 10px 15px; font-size: 14px; cursor: pointer; margin-right: 10px;">Consent</button>
+        <button onclick="location.href='https://secretrevealhub.online/carbofire-supplement-reviews'" style="background: #dc3545; color: #fff; border: none; border-radius: 5px; padding: 10px 15px; font-size: 14px; cursor: pointer;">Reject</button>
+        <button onclick="location.href='https://secretrevealhub.online/carbofire-supplement-reviews'" style="background: transparent; color: #666; border: none; font-size: 14px; cursor: pointer; position: absolute; top: 5px; right: 10px;">✖</button>
+    </div>
+</div>
+
+<!-- JavaScript para o atraso -->
+<script>
+    // Função para mostrar a pop-up após 4 segundos
+    window.onload = function() {
+        setTimeout(function() {
+            document.getElementById('cookie-popup').style.display = 'block';
+        }, 4000); // 4000 milissegundos = 4 segundos
+    };
+
+    // Função para fechar a pop-up
+    function closePopup() {
+        document.getElementById('cookie-popup').style.display = 'none';
+    }
+</script>
+
 </body>
 </html>
